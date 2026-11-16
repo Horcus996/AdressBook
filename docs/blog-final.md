@@ -13,6 +13,8 @@
 
 ---
 
+<a id="1-assignment-information"></a>
+
 ## 1. Assignment Information
 
 | Item | Content |
@@ -23,6 +25,8 @@
 | Objectives of This Assignment | Implement the address book features and practice pair collaboration, Git and software engineering |
 | Other References | Flask documentation, openpyxl documentation, Python 3 standard library tutorial |
 
+<a id="2-project-links"></a>
+
 ## 2. Project Links
 
 - GitHub team repository: https://github.com/Horcus996/AdressBook
@@ -31,6 +35,8 @@
 - Pull Request #1: https://github.com/Horcus996/AdressBook/pull/1
 - Pull Request #2: https://github.com/Horcus996/AdressBook/pull/2
 - Release version: https://github.com/Horcus996/AdressBook/releases/tag/v1.0.0
+
+<a id="3-git-contribution-record"></a>
 
 ## 3. Git Contribution Record
 
@@ -42,8 +48,10 @@ Commit history screenshot:
 
 | Member | GitHub Username | Commits |
 |---|---|---:|
-| Member A: Wenjie Huang (832401206) | whichdogthree | 17 |
+| Member A: Wenjie Huang (832401206) | whichdogthree | 18 |
 | Member B: Haodong Wu (832401221) | hodden2026 | 3 |
+
+<a id="4-implementation-design"></a>
 
 ## 4. Implementation Design
 
@@ -107,6 +115,8 @@ The system has three layers: browser page → Flask endpoints → local data fil
 | GET | `/api/template.xlsx` | Download the import template |
 | POST | `/api/import` | Upload a `.xlsx` to import contacts |
 
+<a id="5-program-evidence"></a>
+
 ## 5. Program Evidence
 
 > Screenshots and the complete demonstration video are recorded while the application runs locally. The video continuously shows the real running application.
@@ -137,6 +147,8 @@ The system has three layers: browser page → Flask endpoints → local data fil
 
 The backend smoke test covers health check, sample data loading, create, favorite filter, bookmark toggle, update, string bookmark parsing, export header and row count, import parsing, imported field validation, export round-trip validity, and delete; all 15 checks pass locally.
 
+<a id="6-division-of-labor"></a>
+
 ## 6. Division of Labor
 
 | Member | Main Responsibilities | Modules |
@@ -147,6 +159,8 @@ The backend smoke test covers health check, sample data loading, create, favorit
 
 Both members participated in coding and review; integration adjustments and fixes were committed through the backend feature branch and merged by Pull Request.
 
+<a id="7-contribution-ratio"></a>
+
 ## 7. Contribution Ratio
 
 | Member | Contribution Ratio |
@@ -154,6 +168,8 @@ Both members participated in coding and review; integration adjustments and fixe
 | Member A: Wenjie Huang (832401206) | 50% |
 | Member B: Haodong Wu (832401221) | 50% |
 | **Total** | **100%** |
+
+<a id="8-psp-tables"></a>
 
 ## 8. PSP Tables
 

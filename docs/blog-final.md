@@ -42,7 +42,7 @@ Commit history screenshot:
 
 | Member | GitHub Username | Commits |
 |---|---|---:|
-| Member A: Wenjie Huang (832401206) | whichdogthree | 12 |
+| Member A: Wenjie Huang (832401206) | whichdogthree | 14 |
 | Member B: Haodong Wu (832401221) | hodden2026 | 3 |
 
 ## 4. Implementation Design

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Local runtime data (regenerated on first run, not part of the source repo)
+address-book/data/contacts.json
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

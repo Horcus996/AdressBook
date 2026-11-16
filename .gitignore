@@ -13,3 +13,6 @@ address-book/data/contacts.json
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local handoff bundle (not part of the source repository)
+handoff/

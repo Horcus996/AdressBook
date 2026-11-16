@@ -203,7 +203,7 @@ The test covers: health check, sample data loading, create, favorite filter, boo
 
 ## 10. Verification Record
 
-The smoke test has been run in the development environment: all 13 checks pass. After the local service starts on port 5000, the health check returns `{"contacts": 3, "status": "ok"}` and the page renders correctly. The sample export file is `sample_contacts.xlsx`.
+The smoke test has been run in the development environment: all 15 checks pass. After the local service starts on port 5000, the health check returns `{"contacts": 3, "status": "ok"}` and the page renders correctly. The sample export file is `sample_contacts.xlsx`.
 
 ## 11. Known Limitations and Possible Extensions
 

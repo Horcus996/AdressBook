@@ -44,7 +44,7 @@ Run the smoke test without a running server:
 python tests/smoke_test.py
 ```
 
-All 13 checks pass when the final line reads `All smoke tests passed.`.
+All 15 checks pass when the final line reads `All smoke tests passed.`.
 
 ## Repository Layout
 
@@ -65,7 +65,8 @@ All 13 checks pass when the final line reads `All smoke tests passed.`.
 └── docs/
     ├── team-guide.md             # Collaboration workflow, blog template, PSP tables, deployment guide
     ├── submission-guide.md       # Frontend/backend division and GitHub submission guide
-    └── blog-draft.md             # Personal blog draft (each member publishes one)
+    ├── blog-draft.md             # Early blog draft
+    └── blog-final.md             # Final English blog post (shared base for publishing)
 ```
 
 ## Documentation
@@ -74,7 +75,8 @@ All 13 checks pass when the final line reads `All smoke tests passed.`.
 - [Code standards](address-book/CODE_STANDARDS.md) — naming, formatting, commit message and review conventions.
 - [Team collaboration guide](docs/team-guide.md) — workflow, blog template, PSP tables and deployment steps.
 - [Submission guide](docs/submission-guide.md) — role-based file ownership, commit sequence and Git commands.
-- [Blog draft](docs/blog-draft.md) — required blog sections and PSP tables to complete before publishing.
+- [Blog draft](docs/blog-draft.md) — early blog draft.
+- [Final blog post](docs/blog-final.md) — completed English blog with division of labor, PSP tables and evidence links.
 
 ## API Reference (Summary)
 

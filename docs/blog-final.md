@@ -38,7 +38,7 @@
 
 Commit history screenshot:
 
-![GitHub commit history]([commit history screenshot, to upload])
+![GitHub commit history](https://i-blog.csdnimg.cn/direct/a2ec0f6a789049e2846a11ec86a0ccdb.png#pic_center)
 
 | Member | GitHub Username | Commits |
 |---|---|---:|

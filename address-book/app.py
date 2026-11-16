@@ -155,9 +155,9 @@ def normalize_contact_payload(data, existing=None):
 
     contact = existing or {}
     contact["name"] = name
-    contact["bookmarked"] = bool(
-        data.get("bookmarked", contact.get("bookmarked", False))
-    )
+    contact["bookmarked"] = parse_bookmarked(
+    data.get("bookmarked", contact.get("bookmarked", False))
+)
     contact["phones"] = clean_list(data.get("phones", contact.get("phones", [])))
     contact["emails"] = clean_list(data.get("emails", contact.get("emails", [])))
     contact["socials"] = clean_list(data.get("socials", contact.get("socials", [])))

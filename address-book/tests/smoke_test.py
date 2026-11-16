@@ -83,7 +83,16 @@ check(
     resp.status_code == 200 and resp.get_json()["name"] == "Test Person Renamed",
     "update contact works",
 )
-
+# Verify that the string "false" disables bookmarking.
+resp = client.put(
+    f"/api/contacts/{new_id}",
+    json={**payload, "bookmarked": "false"},
+)
+check(
+    resp.status_code == 200
+    and resp.get_json()["bookmarked"] is False,
+    "string false is parsed as an unbookmarked contact",
+)
 # 7. Export to .xlsx: header + one row per contact ---------------------------
 resp = client.get("/api/export-contacts.xlsx")
 check(resp.status_code == 200, "export returns 200")

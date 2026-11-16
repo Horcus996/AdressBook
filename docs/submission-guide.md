@@ -4,21 +4,21 @@
 
 ## 1. File Ownership Summary
 
-### 1.1 Backend Member (Member A) — 3 Code Files
-
-| # | File Path | Responsibility | Related Score |
-|---|---|---|---|
-| 1 | `address-book/app.py` | Flask application: contact data model, CRUD endpoints, bookmark toggle, validation and cleaning, JSON persistence, Excel import/export, template download | Bookmark 25, multiple methods 10, Excel import/export 25 |
-| 2 | `address-book/requirements.txt` | Python dependency list (Flask, openpyxl) so others can reproduce the install | Reproducibility |
-| 3 | `address-book/tests/smoke_test.py` | Backend smoke test: health check, create, favorite filter, bookmark toggle, update, export header and row count, import parsing, field validation, export round-trip, delete | Correctness, verifiability |
-
-### 1.2 Frontend Member (Member B) — 3 Code Files
+### 1.1 Frontend Member (Member A) — 3 Code Files
 
 | # | File Path | Responsibility | Related Score |
 |---|---|---|---|
 | 1 | `address-book/templates/index.html` | Page structure: header statistics, toolbar (tabs / search / buttons), contact card container, add-edit modal, toast bar; semantic markup | Page style 10 |
 | 2 | `address-book/static/css/style.css` | Visual styles: color variables, responsive card grid, buttons / chips / modal / toast layout and interaction states | Page style 10 |
 | 3 | `address-book/static/js/app.js` | Frontend logic: contact rendering, bookmark toggle, filtering and search, modal form and dynamic method rows, CRUD calls, Excel import/export integration, toast feedback | Bookmark, multiple methods, import/export UI interaction |
+
+### 1.2 Backend Member (Member B) — 3 Code Files
+
+| # | File Path | Responsibility | Related Score |
+|---|---|---|---|
+| 1 | `address-book/app.py` | Flask application: contact data model, CRUD endpoints, bookmark toggle, validation and cleaning, JSON persistence, Excel import/export, template download | Bookmark 25, multiple methods 10, Excel import/export 25 |
+| 2 | `address-book/requirements.txt` | Python dependency list (Flask, openpyxl) so others can reproduce the install | Reproducibility |
+| 3 | `address-book/tests/smoke_test.py` | Backend smoke test: health check, create, favorite filter, bookmark toggle, update, export header and row count, import parsing, field validation, export round-trip, delete | Correctness, verifiability |
 
 ### 1.3 Shared Documents (Committed by Both)
 
@@ -53,7 +53,7 @@ Contact fields (identical on both sides): `id`, `name`, `bookmarked`, `phones[]`
 
 Commit messages follow section 2 of `CODE_STANDARDS.md`: `type: short English description`. The sequence below is a reference; merge or split according to the actual implementation, but each member must have multiple traceable commits.
 
-### 3.1 Backend Member Commits
+### 3.1 Backend Member (Member B) Commits
 
 1. `feat: scaffold Flask app with contact model and JSON persistence`
    — commit the `app.py` skeleton, data model and local JSON read/write.
@@ -66,7 +66,7 @@ Commit messages follow section 2 of `CODE_STANDARDS.md`: `type: short English de
 5. `chore: pin Flask and openpyxl dependencies`
    — commit `requirements.txt`.
 
-### 3.2 Frontend Member Commits
+### 3.2 Frontend Member (Member A) Commits
 
 1. `feat: build contact list layout and toolbar structure`
    — commit the `templates/index.html` page structure.
@@ -123,7 +123,7 @@ git checkout -b feature/<your-next-branch>
 
 ## 5. Pre-commit Self-check
 
-### 5.1 Backend Member
+### 5.1 Backend Member (Member B)
 
 - [ ] `python tests/smoke_test.py` fully passes.
 - [ ] Endpoint errors return JSON `{"error": ...}` with the correct status code (400 / 404).
@@ -132,7 +132,7 @@ git checkout -b feature/<your-next-branch>
 - [ ] Dependency changes are reflected in `requirements.txt`.
 - [ ] No debug leftovers (temporary `print`, commented-out dead code).
 
-### 5.2 Frontend Member
+### 5.2 Frontend Member (Member A)
 
 - [ ] The page opens in the browser without console errors and API calls work.
 - [ ] Form fields match the backend data model (multi-value fields are arrays).

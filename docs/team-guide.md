@@ -80,8 +80,8 @@ The assignment requires both students to participate in development. The table b
 
 | Role | Main Responsibilities | Modules |
 |---|---|---|
-| Member A (backend-leaning) | Data model, CRUD endpoints, Excel import/export, persistence and testing | `app.py`, `tests/smoke_test.py` |
-| Member B (frontend-leaning) | Page layout, form interaction, bookmark and filtering, styles and feedback | `templates/index.html`, `static/css/style.css`, `static/js/app.js` |
+| Member A (frontend-leaning) | Page layout, form interaction, bookmark and filtering, styles and feedback | `templates/index.html`, `static/css/style.css`, `static/js/app.js` |
+| Member B (backend-leaning) | Data model, CRUD endpoints, Excel import/export, persistence and testing | `app.py`, `tests/smoke_test.py` |
 | Shared | Requirements discussion, API and field agreement, code review, documentation and evidence | Repository documentation, blog material |
 
 > Even if the lean is backend or frontend, both members should have commits in the other side's modules (for example, small fixes after review, integration adjustments) to satisfy the "both students must code" requirement.
@@ -195,8 +195,8 @@ Keep the following material during development and integration so it can be used
 ## 7. Contribution Ratio
 | Member | Contribution Ratio |
 |---|---|
-| Member A | 55% |
-| Member B | 45% |
+| Member A | 50% |
+| Member B | 50% |
 | Total | 100% |
 
 ## 8. Collaboration Problems and Solutions
